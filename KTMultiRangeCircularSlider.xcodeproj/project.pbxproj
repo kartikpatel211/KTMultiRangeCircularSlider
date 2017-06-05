@@ -1,0 +1,361 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		66BE8F921EE5180500C351D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BE8F911EE5180500C351D6 /* AppDelegate.swift */; };
+		66BE8F941EE5180500C351D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BE8F931EE5180500C351D6 /* ViewController.swift */; };
+		66BE8F971EE5180600C351D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66BE8F951EE5180600C351D6 /* Main.storyboard */; };
+		66BE8F991EE5180600C351D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66BE8F981EE5180600C351D6 /* Assets.xcassets */; };
+		66BE8F9C1EE5180600C351D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66BE8F9A1EE5180600C351D6 /* LaunchScreen.storyboard */; };
+		66BE8FA51EE518D600C351D6 /* KTMultiRangeCircularSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BE8FA41EE518D600C351D6 /* KTMultiRangeCircularSlider.swift */; };
+		66BE8FAC1EE5197F00C351D6 /* CircularSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BE8FA71EE5197F00C351D6 /* CircularSlider.swift */; };
+		66BE8FAD1EE5197F00C351D6 /* CircularSliderHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BE8FA81EE5197F00C351D6 /* CircularSliderHandle.swift */; };
+		66BE8FAE1EE5197F00C351D6 /* CircularTrig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BE8FA91EE5197F00C351D6 /* CircularTrig.swift */; };
+		66BE8FAF1EE5197F00C351D6 /* DoubleHandleCircularSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BE8FAA1EE5197F00C351D6 /* DoubleHandleCircularSlider.swift */; };
+		66BE8FB01EE5197F00C351D6 /* GradientCircularSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BE8FAB1EE5197F00C351D6 /* GradientCircularSlider.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		66BE8F8E1EE5180500C351D6 /* KTMultiRangeCircularSlider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KTMultiRangeCircularSlider.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		66BE8F911EE5180500C351D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		66BE8F931EE5180500C351D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		66BE8F961EE5180600C351D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		66BE8F981EE5180600C351D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		66BE8F9B1EE5180600C351D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		66BE8F9D1EE5180600C351D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66BE8FA41EE518D600C351D6 /* KTMultiRangeCircularSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KTMultiRangeCircularSlider.swift; sourceTree = "<group>"; };
+		66BE8FA71EE5197F00C351D6 /* CircularSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularSlider.swift; sourceTree = "<group>"; };
+		66BE8FA81EE5197F00C351D6 /* CircularSliderHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularSliderHandle.swift; sourceTree = "<group>"; };
+		66BE8FA91EE5197F00C351D6 /* CircularTrig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularTrig.swift; sourceTree = "<group>"; };
+		66BE8FAA1EE5197F00C351D6 /* DoubleHandleCircularSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleHandleCircularSlider.swift; sourceTree = "<group>"; };
+		66BE8FAB1EE5197F00C351D6 /* GradientCircularSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientCircularSlider.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		66BE8F8B1EE5180500C351D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		66BE8F851EE5180500C351D6 = {
+			isa = PBXGroup;
+			children = (
+				66BE8F901EE5180500C351D6 /* KTMultiRangeCircularSlider */,
+				66BE8F8F1EE5180500C351D6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		66BE8F8F1EE5180500C351D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				66BE8F8E1EE5180500C351D6 /* KTMultiRangeCircularSlider.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		66BE8F901EE5180500C351D6 /* KTMultiRangeCircularSlider */ = {
+			isa = PBXGroup;
+			children = (
+				66BE8FB11EE51A5400C351D6 /* Example */,
+				66BE8FA61EE5197F00C351D6 /* CircularSlider */,
+				66BE8FA31EE5189C00C351D6 /* UIControl */,
+				66BE8F911EE5180500C351D6 /* AppDelegate.swift */,
+				66BE8F951EE5180600C351D6 /* Main.storyboard */,
+				66BE8F981EE5180600C351D6 /* Assets.xcassets */,
+				66BE8F9A1EE5180600C351D6 /* LaunchScreen.storyboard */,
+				66BE8F9D1EE5180600C351D6 /* Info.plist */,
+			);
+			path = KTMultiRangeCircularSlider;
+			sourceTree = "<group>";
+		};
+		66BE8FA31EE5189C00C351D6 /* UIControl */ = {
+			isa = PBXGroup;
+			children = (
+				66BE8FA41EE518D600C351D6 /* KTMultiRangeCircularSlider.swift */,
+			);
+			path = UIControl;
+			sourceTree = "<group>";
+		};
+		66BE8FA61EE5197F00C351D6 /* CircularSlider */ = {
+			isa = PBXGroup;
+			children = (
+				66BE8FA71EE5197F00C351D6 /* CircularSlider.swift */,
+				66BE8FA81EE5197F00C351D6 /* CircularSliderHandle.swift */,
+				66BE8FA91EE5197F00C351D6 /* CircularTrig.swift */,
+				66BE8FAA1EE5197F00C351D6 /* DoubleHandleCircularSlider.swift */,
+				66BE8FAB1EE5197F00C351D6 /* GradientCircularSlider.swift */,
+			);
+			path = CircularSlider;
+			sourceTree = "<group>";
+		};
+		66BE8FB11EE51A5400C351D6 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				66BE8F931EE5180500C351D6 /* ViewController.swift */,
+			);
+			name = Example;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		66BE8F8D1EE5180500C351D6 /* KTMultiRangeCircularSlider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66BE8FA01EE5180600C351D6 /* Build configuration list for PBXNativeTarget "KTMultiRangeCircularSlider" */;
+			buildPhases = (
+				66BE8F8A1EE5180500C351D6 /* Sources */,
+				66BE8F8B1EE5180500C351D6 /* Frameworks */,
+				66BE8F8C1EE5180500C351D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KTMultiRangeCircularSlider;
+			productName = KTMultiRangeCircularSlider;
+			productReference = 66BE8F8E1EE5180500C351D6 /* KTMultiRangeCircularSlider.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		66BE8F861EE5180500C351D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = KTPatel;
+				TargetAttributes = {
+					66BE8F8D1EE5180500C351D6 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = KP9ST78F2Z;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 66BE8F891EE5180500C351D6 /* Build configuration list for PBXProject "KTMultiRangeCircularSlider" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 66BE8F851EE5180500C351D6;
+			productRefGroup = 66BE8F8F1EE5180500C351D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				66BE8F8D1EE5180500C351D6 /* KTMultiRangeCircularSlider */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		66BE8F8C1EE5180500C351D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66BE8F9C1EE5180600C351D6 /* LaunchScreen.storyboard in Resources */,
+				66BE8F991EE5180600C351D6 /* Assets.xcassets in Resources */,
+				66BE8F971EE5180600C351D6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		66BE8F8A1EE5180500C351D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66BE8FAF1EE5197F00C351D6 /* DoubleHandleCircularSlider.swift in Sources */,
+				66BE8F941EE5180500C351D6 /* ViewController.swift in Sources */,
+				66BE8F921EE5180500C351D6 /* AppDelegate.swift in Sources */,
+				66BE8FAE1EE5197F00C351D6 /* CircularTrig.swift in Sources */,
+				66BE8FAD1EE5197F00C351D6 /* CircularSliderHandle.swift in Sources */,
+				66BE8FB01EE5197F00C351D6 /* GradientCircularSlider.swift in Sources */,
+				66BE8FA51EE518D600C351D6 /* KTMultiRangeCircularSlider.swift in Sources */,
+				66BE8FAC1EE5197F00C351D6 /* CircularSlider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		66BE8F951EE5180600C351D6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66BE8F961EE5180600C351D6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		66BE8F9A1EE5180600C351D6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66BE8F9B1EE5180600C351D6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		66BE8F9E1EE5180600C351D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		66BE8F9F1EE5180600C351D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		66BE8FA11EE5180600C351D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KP9ST78F2Z;
+				INFOPLIST_FILE = KTMultiRangeCircularSlider/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ktpatel.KTMultiRangeCircularSlider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		66BE8FA21EE5180600C351D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KP9ST78F2Z;
+				INFOPLIST_FILE = KTMultiRangeCircularSlider/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ktpatel.KTMultiRangeCircularSlider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		66BE8F891EE5180500C351D6 /* Build configuration list for PBXProject "KTMultiRangeCircularSlider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66BE8F9E1EE5180600C351D6 /* Debug */,
+				66BE8F9F1EE5180600C351D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66BE8FA01EE5180600C351D6 /* Build configuration list for PBXNativeTarget "KTMultiRangeCircularSlider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66BE8FA11EE5180600C351D6 /* Debug */,
+				66BE8FA21EE5180600C351D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 66BE8F861EE5180500C351D6 /* Project object */;
+}

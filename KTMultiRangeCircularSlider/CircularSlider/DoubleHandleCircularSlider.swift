@@ -20,7 +20,7 @@ class DoubleHandleCircularSlider: CircularSlider {
       assert(newValue <= maximumValue && newValue >= minimumValue, "current value \(newValue) must be between minimumValue \(minimumValue) and maximumValue \(maximumValue)")
       // Update the upperAngleFromNorth to match this newly set value
       upperAngleFromNorth = CGFloat((newValue * Float(maximumAngle)) / (maximumValue - minimumValue))
-      sendActions(for: UIControlEvents.valueChanged)
+      sendActions(for: UIControl.Event.valueChanged)
     } get {
       return (Float(upperAngleFromNorth) * (maximumValue - minimumValue)) / Float(maximumAngle)
     }
@@ -76,7 +76,7 @@ class DoubleHandleCircularSlider: CircularSlider {
       moveUpperHandle(lastAngle)
     }
     
-    sendActions(for: UIControlEvents.valueChanged)
+    sendActions(for: UIControl.Event.valueChanged)
     
     return true
   }

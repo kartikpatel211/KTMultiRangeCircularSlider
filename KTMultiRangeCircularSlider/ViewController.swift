@@ -81,7 +81,7 @@ class ViewController: UIViewController, KTMultiRangeCircularSliderDelegate {
         circularSlider.delegate = self
         
         // setup target to watch for value change
-        circularSlider.addTarget(self, action: #selector(ViewController.multiRangeSliderViewValueChanged(_:)), for: UIControlEvents.valueChanged)
+        circularSlider.addTarget(self, action: #selector(ViewController.multiRangeSliderViewValueChanged(_:)), for: UIControl.Event.valueChanged)
         
         // setup slider defaults
         // NOTE: sliderMaximumAngle must be set before currentValue and upperCurrentValue
@@ -111,7 +111,7 @@ class ViewController: UIViewController, KTMultiRangeCircularSliderDelegate {
         }
     }
     
-    func multiRangeSliderViewValueChanged(_ slider: KTMultiRangeCircularSlider) {
+    @objc func multiRangeSliderViewValueChanged(_ slider: KTMultiRangeCircularSlider) {
         //lowerValueLabel.text = "\(slider.handle1.currentValue)"
         //upperValueLabel.text = "\(slider.handle1.upperCurrentValue)"
         

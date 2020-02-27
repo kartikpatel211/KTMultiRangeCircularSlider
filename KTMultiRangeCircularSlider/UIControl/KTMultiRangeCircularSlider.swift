@@ -201,11 +201,11 @@ class KTMultiRangeCircularSlider: UIControl, KTRangeCircularHandleDelegate {
         handle.angleFromNorth = Int((currentValue * Float(maximumAngle)) / (maximumValue - minimumValue))
         moveHandle(CGFloat(handle.angleFromNorth), handle: handle)
         
-        sendActions(for: UIControlEvents.valueChanged)
+        sendActions(for: UIControl.Event.valueChanged)
     }
     
     func setUpperCurrentValue() {
-        sendActions(for: UIControlEvents.valueChanged)
+        sendActions(for: UIControl.Event.valueChanged)
     }
     
     /**
@@ -545,7 +545,7 @@ class KTMultiRangeCircularSlider: UIControl, KTRangeCircularHandleDelegate {
     
     func drawInnerLabels(_ ctx: CGContext, rect: CGRect) {
         if let labels = innerMarkingLabels, labels.count > 0 {
-            let attributes = [NSFontAttributeName: labelFont, NSForegroundColorAttributeName: labelColor] as [String : Any]
+            let attributes = [convertFromNSAttributedStringKey(NSAttributedString.Key.font): labelFont, convertFromNSAttributedStringKey(NSAttributedString.Key.foregroundColor): labelColor] as [String : Any]
             
             // Enumerate through labels clockwise
             for i in 0 ..< labels.count {
@@ -560,7 +560,7 @@ class KTMultiRangeCircularSlider: UIControl, KTRangeCircularHandleDelegate {
                 ctx.concatenate(CGAffineTransform(translationX: -(labelFrame.origin.x + (labelFrame.width / 2)), y: -(labelFrame.origin.y + (labelFrame.height / 2))))
                 
                 // draw label
-                label.draw(in: labelFrame, withAttributes: attributes)
+                label.draw(in: labelFrame, withAttributes: convertToOptionalNSAttributedStringKeyDictionary(attributes))
                 
                 
                 /*let line = "-"
@@ -629,7 +629,7 @@ class KTMultiRangeCircularSlider: UIControl, KTRangeCircularHandleDelegate {
             }
         }
         
-        sendActions(for: UIControlEvents.valueChanged)
+        sendActions(for: UIControl.Event.valueChanged)
         return true
     }
     
@@ -661,8 +661,8 @@ class KTMultiRangeCircularSlider: UIControl, KTRangeCircularHandleDelegate {
     }
     
     func sizeOfString(_ string: String, withFont font: UIFont) -> CGSize {
-        let attributes = [NSFontAttributeName: font]
-        return NSAttributedString(string: string, attributes: attributes).size()
+        let attributes = [convertFromNSAttributedStringKey(NSAttributedString.Key.font): font]
+        return NSAttributedString(string: string, attributes: convertToOptionalNSAttributedStringKeyDictionary(attributes)).size()
     }
     
     func getRotationalTransform() -> CGAffineTransform {
@@ -829,4 +829,15 @@ class KTMultiRangeCircularSlider: UIControl, KTRangeCircularHandleDelegate {
         let pointInsideVerticalHandleBounds  = (point.y >= handleCenter.y - handleRadius && point.y <= handleCenter.y + handleRadius)
         return pointInsideHorzontalHandleBounds && pointInsideVerticalHandleBounds
     }
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromNSAttributedStringKey(_ input: NSAttributedString.Key) -> String {
+	return input.rawValue
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToOptionalNSAttributedStringKeyDictionary(_ input: [String: Any]?) -> [NSAttributedString.Key: Any]? {
+	guard let input = input else { return nil }
+	return Dictionary(uniqueKeysWithValues: input.map { key, value in (NSAttributedString.Key(rawValue: key), value)})
 }

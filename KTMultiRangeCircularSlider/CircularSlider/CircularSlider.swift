@@ -82,7 +82,7 @@ class CircularSlider: UIControl {
             //print("currentValue: \(newValue), newAngle: \(angleFromNorth)")
             
             moveHandle(CGFloat(angleFromNorth))
-            sendActions(for: UIControlEvents.valueChanged)
+            sendActions(for: UIControl.Event.valueChanged)
         } get {
             return (Float(angleFromNorth) * (maximumValue - minimumValue)) / Float(maximumAngle)
         }
@@ -363,7 +363,7 @@ class CircularSlider: UIControl {
     
     func drawInnerLabels(_ ctx: CGContext, rect: CGRect) {
         if let labels = innerMarkingLabels, labels.count > 0 {
-            let attributes = [NSFontAttributeName: labelFont, NSForegroundColorAttributeName: labelColor] as [String : Any]
+            let attributes = [convertFromNSAttributedStringKey(NSAttributedString.Key.font): labelFont, convertFromNSAttributedStringKey(NSAttributedString.Key.foregroundColor): labelColor] as [String : Any]
             
             // Enumerate through labels clockwise
             for i in 0 ..< labels.count {
@@ -378,7 +378,7 @@ class CircularSlider: UIControl {
                 ctx.concatenate(CGAffineTransform(translationX: -(labelFrame.origin.x + (labelFrame.width / 2)), y: -(labelFrame.origin.y + (labelFrame.height / 2))))
                 
                 // draw label
-                label.draw(in: labelFrame, withAttributes: attributes)
+                label.draw(in: labelFrame, withAttributes: convertToOptionalNSAttributedStringKeyDictionary(attributes))
                 
                 ctx.restoreGState()
             }
@@ -422,7 +422,7 @@ class CircularSlider: UIControl {
         let lastAngle = floor(CircularTrig.angleRelativeToNorthFromPoint(centerPoint, toPoint: lastPoint))
         
         moveHandle(lastAngle)
-        sendActions(for: UIControlEvents.valueChanged)
+        sendActions(for: UIControl.Event.valueChanged)
         
         return true
     }
@@ -451,8 +451,8 @@ class CircularSlider: UIControl {
     }
     
     func sizeOfString(_ string: String, withFont font: UIFont) -> CGSize {
-        let attributes = [NSFontAttributeName: font]
-        return NSAttributedString(string: string, attributes: attributes).size()
+        let attributes = [convertFromNSAttributedStringKey(NSAttributedString.Key.font): font]
+        return NSAttributedString(string: string, attributes: convertToOptionalNSAttributedStringKeyDictionary(attributes)).size()
     }
     
     func getRotationalTransform() -> CGAffineTransform {
@@ -494,4 +494,15 @@ class CircularSlider: UIControl {
         UIGraphicsEndImageContext()
         return newImage
     }
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromNSAttributedStringKey(_ input: NSAttributedString.Key) -> String {
+	return input.rawValue
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToOptionalNSAttributedStringKeyDictionary(_ input: [String: Any]?) -> [NSAttributedString.Key: Any]? {
+	guard let input = input else { return nil }
+	return Dictionary(uniqueKeysWithValues: input.map { key, value in (NSAttributedString.Key(rawValue: key), value)})
 }

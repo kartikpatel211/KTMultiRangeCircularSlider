@@ -12,7 +12,7 @@ import Foundation
 
 extension Array where Element: AnyObject {
     mutating func remove(object: Element) {
-        if let index = index(where: { $0 === object }) {
+        if let index = firstIndex(where: { $0 === object }) {
             remove(at: index)
         }
     }

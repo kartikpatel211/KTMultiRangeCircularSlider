@@ -8,24 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		3BA2F62A2407CF4E0031D001 /* KTMultiRangeCircularSliderFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BA2F6282407CF4E0031D001 /* KTMultiRangeCircularSliderFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3BA2F6382407CF6D0031D001 /* CircularTrig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA2F6312407CF6D0031D001 /* CircularTrig.swift */; };
-		3BA2F6392407CF6D0031D001 /* DoubleHandleCircularSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA2F6322407CF6D0031D001 /* DoubleHandleCircularSlider.swift */; };
-		3BA2F63A2407CF6D0031D001 /* CircularSliderHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA2F6332407CF6D0031D001 /* CircularSliderHandle.swift */; };
-		3BA2F63B2407CF6D0031D001 /* CircularSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA2F6342407CF6D0031D001 /* CircularSlider.swift */; };
-		3BA2F63C2407CF6D0031D001 /* GradientCircularSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA2F6352407CF6D0031D001 /* GradientCircularSlider.swift */; };
-		3BA2F63D2407CF6D0031D001 /* KTMultiRangeCircularSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA2F6372407CF6D0031D001 /* KTMultiRangeCircularSlider.swift */; };
+		3BA2F64B2407E8020031D001 /* CircularTrig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA2F6442407E8020031D001 /* CircularTrig.swift */; };
+		3BA2F64C2407E8020031D001 /* DoubleHandleCircularSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA2F6452407E8020031D001 /* DoubleHandleCircularSlider.swift */; };
+		3BA2F64D2407E8020031D001 /* CircularSliderHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA2F6462407E8020031D001 /* CircularSliderHandle.swift */; };
+		3BA2F64E2407E8020031D001 /* CircularSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA2F6472407E8020031D001 /* CircularSlider.swift */; };
+		3BA2F64F2407E8020031D001 /* GradientCircularSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA2F6482407E8020031D001 /* GradientCircularSlider.swift */; };
+		3BA2F6502407E8020031D001 /* KTMultiRangeCircularSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA2F64A2407E8020031D001 /* KTMultiRangeCircularSlider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3BA2F6252407CF4E0031D001 /* KTMultiRangeCircularSliderFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KTMultiRangeCircularSliderFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BA2F6282407CF4E0031D001 /* KTMultiRangeCircularSliderFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTMultiRangeCircularSliderFramework.h; sourceTree = "<group>"; };
 		3BA2F6292407CF4E0031D001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3BA2F6312407CF6D0031D001 /* CircularTrig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularTrig.swift; sourceTree = "<group>"; };
-		3BA2F6322407CF6D0031D001 /* DoubleHandleCircularSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleHandleCircularSlider.swift; sourceTree = "<group>"; };
-		3BA2F6332407CF6D0031D001 /* CircularSliderHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularSliderHandle.swift; sourceTree = "<group>"; };
-		3BA2F6342407CF6D0031D001 /* CircularSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularSlider.swift; sourceTree = "<group>"; };
-		3BA2F6352407CF6D0031D001 /* GradientCircularSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientCircularSlider.swift; sourceTree = "<group>"; };
-		3BA2F6372407CF6D0031D001 /* KTMultiRangeCircularSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KTMultiRangeCircularSlider.swift; sourceTree = "<group>"; };
+		3BA2F6442407E8020031D001 /* CircularTrig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularTrig.swift; sourceTree = "<group>"; };
+		3BA2F6452407E8020031D001 /* DoubleHandleCircularSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleHandleCircularSlider.swift; sourceTree = "<group>"; };
+		3BA2F6462407E8020031D001 /* CircularSliderHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularSliderHandle.swift; sourceTree = "<group>"; };
+		3BA2F6472407E8020031D001 /* CircularSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularSlider.swift; sourceTree = "<group>"; };
+		3BA2F6482407E8020031D001 /* GradientCircularSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientCircularSlider.swift; sourceTree = "<group>"; };
+		3BA2F64A2407E8020031D001 /* KTMultiRangeCircularSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KTMultiRangeCircularSlider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,34 +58,32 @@
 		3BA2F6272407CF4E0031D001 /* KTMultiRangeCircularSliderFramework */ = {
 			isa = PBXGroup;
 			children = (
-				3BA2F6302407CF6D0031D001 /* CircularSlider */,
-				3BA2F6362407CF6D0031D001 /* UIControl */,
+				3BA2F6432407E8020031D001 /* CircularSlider */,
+				3BA2F6492407E8020031D001 /* UIControl */,
 				3BA2F6282407CF4E0031D001 /* KTMultiRangeCircularSliderFramework.h */,
 				3BA2F6292407CF4E0031D001 /* Info.plist */,
 			);
 			path = KTMultiRangeCircularSliderFramework;
 			sourceTree = "<group>";
 		};
-		3BA2F6302407CF6D0031D001 /* CircularSlider */ = {
+		3BA2F6432407E8020031D001 /* CircularSlider */ = {
 			isa = PBXGroup;
 			children = (
-				3BA2F6312407CF6D0031D001 /* CircularTrig.swift */,
-				3BA2F6322407CF6D0031D001 /* DoubleHandleCircularSlider.swift */,
-				3BA2F6332407CF6D0031D001 /* CircularSliderHandle.swift */,
-				3BA2F6342407CF6D0031D001 /* CircularSlider.swift */,
-				3BA2F6352407CF6D0031D001 /* GradientCircularSlider.swift */,
+				3BA2F6442407E8020031D001 /* CircularTrig.swift */,
+				3BA2F6452407E8020031D001 /* DoubleHandleCircularSlider.swift */,
+				3BA2F6462407E8020031D001 /* CircularSliderHandle.swift */,
+				3BA2F6472407E8020031D001 /* CircularSlider.swift */,
+				3BA2F6482407E8020031D001 /* GradientCircularSlider.swift */,
 			);
-			name = CircularSlider;
-			path = ../../KTMultiRangeCircularSlider/CircularSlider;
+			path = CircularSlider;
 			sourceTree = "<group>";
 		};
-		3BA2F6362407CF6D0031D001 /* UIControl */ = {
+		3BA2F6492407E8020031D001 /* UIControl */ = {
 			isa = PBXGroup;
 			children = (
-				3BA2F6372407CF6D0031D001 /* KTMultiRangeCircularSlider.swift */,
+				3BA2F64A2407E8020031D001 /* KTMultiRangeCircularSlider.swift */,
 			);
-			name = UIControl;
-			path = ../../KTMultiRangeCircularSlider/UIControl;
+			path = UIControl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,12 +165,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BA2F6392407CF6D0031D001 /* DoubleHandleCircularSlider.swift in Sources */,
-				3BA2F63C2407CF6D0031D001 /* GradientCircularSlider.swift in Sources */,
-				3BA2F63D2407CF6D0031D001 /* KTMultiRangeCircularSlider.swift in Sources */,
-				3BA2F6382407CF6D0031D001 /* CircularTrig.swift in Sources */,
-				3BA2F63A2407CF6D0031D001 /* CircularSliderHandle.swift in Sources */,
-				3BA2F63B2407CF6D0031D001 /* CircularSlider.swift in Sources */,
+				3BA2F64C2407E8020031D001 /* DoubleHandleCircularSlider.swift in Sources */,
+				3BA2F64F2407E8020031D001 /* GradientCircularSlider.swift in Sources */,
+				3BA2F6502407E8020031D001 /* KTMultiRangeCircularSlider.swift in Sources */,
+				3BA2F64B2407E8020031D001 /* CircularTrig.swift in Sources */,
+				3BA2F64D2407E8020031D001 /* CircularSliderHandle.swift in Sources */,
+				3BA2F64E2407E8020031D001 /* CircularSlider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

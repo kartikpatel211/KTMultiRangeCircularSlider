@@ -1,12 +1,13 @@
 //
 //  ViewController.swift
-//  KTMultiRangeCircularSlider
+//  KTMultiRangeCircularSliderExample
 //
-//  Created by Kartik Patel on 6/5/17.
-//  Copyright © 2017 KTPatel. All rights reserved.
+//  Created by Kartik.Patel.127 on 27/02/20.
+//  Copyright © 2020 KTPatel. All rights reserved.
 //
 
 import UIKit
+import KTMultiRangeCircularSliderFramework
 
 class RangeData {
     var startHour : Int = 0
@@ -124,9 +125,8 @@ class ViewController: UIViewController, KTMultiRangeCircularSliderDelegate {
     func clearRanges() {
         for objRangeData in arrRangeData {
             circularSlider.removeHandle(handle: objRangeData.rangeHandle!)
-            arrRangeData.remove(object: objRangeData)
-            flagRemoveRange = false
         }
+        arrRangeData.removeAll()
     }
     
     @IBAction func btnAdd_TouchUpInside(_ sender: Any) {
@@ -152,26 +152,29 @@ class ViewController: UIViewController, KTMultiRangeCircularSliderDelegate {
     
     func percentageAtTouchByUser(percentage: Double) {
         
-        var isTouchOnExistingRange = false;
         
-        for objRangeData in arrRangeData {
-            
-            let startValue = self.getPercentageFromTime(hour: objRangeData.startHour, minute: objRangeData.startMinute)
-            let endValue = self.getPercentageFromTime(hour: objRangeData.endHour, minute: objRangeData.endMinute)
-            
-            if percentage >= startValue && percentage <= endValue {
-                // touch inside Range
+        var isTouchOnExistingRange = false;
+         
+        if arrRangeData.count > 0 {
+            for i in 0...arrRangeData.count-1 {//objRangeData in arrRangeData {
                 
-                isTouchOnExistingRange = true
+                let startValue = self.getPercentageFromTime(hour: arrRangeData[i].startHour, minute: arrRangeData[i].startMinute)
+                let endValue = self.getPercentageFromTime(hour: arrRangeData[i].endHour, minute: arrRangeData[i].endMinute)
                 
-                if flagRemoveRange == true {
-                    circularSlider.removeHandle(handle: objRangeData.rangeHandle!)
+                if percentage >= startValue && percentage <= endValue {
+                    // touch inside Range
                     
-                    arrRangeData.remove(object: objRangeData)
+                    isTouchOnExistingRange = true
                     
-                    flagRemoveRange = false
-                    
-                    break
+                    if flagRemoveRange == true {
+                        circularSlider.removeHandle(handle: arrRangeData[i].rangeHandle!)
+                        
+                        arrRangeData.remove(at: i)
+                        
+                        flagRemoveRange = false
+                        
+                        break
+                    }
                 }
             }
         }
@@ -206,3 +209,10 @@ class ViewController: UIViewController, KTMultiRangeCircularSliderDelegate {
     }
 }
 
+extension Array where Element: Equatable{
+    mutating func remove (element: Element) {
+        if let i = self.firstIndex(of: element) {
+            self.remove(at: i)
+        }
+    }
+}

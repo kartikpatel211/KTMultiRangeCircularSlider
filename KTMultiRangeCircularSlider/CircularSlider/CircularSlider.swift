@@ -70,7 +70,7 @@ class CircularSlider: UIControl {
     }
     
     // Current value between North/midnight (start) and North/midnight (end) - clockwise direction
-    var currentValue: Float {
+    public var currentValue: Float {
         set {
             assert(newValue <= maximumValue && newValue >= minimumValue, "current value \(newValue) must be between minimumValue \(minimumValue) and maximumValue \(maximumValue)")
             
@@ -121,7 +121,7 @@ class CircularSlider: UIControl {
      *
      *  NSArray of strings used to render labels at regular intervals within the circle
      */
-    var innerMarkingLabels: [String]? {
+    public var innerMarkingLabels: [String]? {
         didSet {
             setNeedsUpdateConstraints()
             setNeedsDisplay()
@@ -175,10 +175,10 @@ class CircularSlider: UIControl {
     
     // type of LineCap to use for the unfilled arc
     // NOTE: user CGLineCap.Butt for full circles
-    var unfilledArcLineCap: CGLineCap = .butt
+    public var unfilledArcLineCap: CGLineCap = .butt
     
     // type of CGLineCap to use for the arc that is filled in as the handle moves
-    var filledArcLineCap: CGLineCap = .butt
+    public var filledArcLineCap: CGLineCap = .butt
     
     // MARK: Computed Public Properties
     var computedRadius: CGFloat {

@@ -1,0 +1,369 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3BA2F6082407CDB60031D001 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA2F6072407CDB60031D001 /* AppDelegate.swift */; };
+		3BA2F60C2407CDB60031D001 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA2F60B2407CDB60031D001 /* ViewController.swift */; };
+		3BA2F60F2407CDB60031D001 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BA2F60D2407CDB60031D001 /* Main.storyboard */; };
+		3BA2F6112407CDB80031D001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BA2F6102407CDB80031D001 /* Assets.xcassets */; };
+		3BA2F6142407CDB80031D001 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BA2F6122407CDB80031D001 /* LaunchScreen.storyboard */; };
+		3BA2F6402407D3410031D001 /* KTMultiRangeCircularSliderFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA2F63F2407D3410031D001 /* KTMultiRangeCircularSliderFramework.framework */; };
+		3BA2F6412407D3410031D001 /* KTMultiRangeCircularSliderFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA2F63F2407D3410031D001 /* KTMultiRangeCircularSliderFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3BA2F6422407D3410031D001 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3BA2F6412407D3410031D001 /* KTMultiRangeCircularSliderFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3BA2F6042407CDB60031D001 /* KTMultiRangeCircularSliderExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KTMultiRangeCircularSliderExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BA2F6072407CDB60031D001 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3BA2F60B2407CDB60031D001 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3BA2F60E2407CDB60031D001 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3BA2F6102407CDB80031D001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3BA2F6132407CDB80031D001 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3BA2F6152407CDB80031D001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BA2F63F2407D3410031D001 /* KTMultiRangeCircularSliderFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KTMultiRangeCircularSliderFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3BA2F6012407CDB60031D001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BA2F6402407D3410031D001 /* KTMultiRangeCircularSliderFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3BA2F5FB2407CDB60031D001 = {
+			isa = PBXGroup;
+			children = (
+				3BA2F6062407CDB60031D001 /* KTMultiRangeCircularSliderExample */,
+				3BA2F6052407CDB60031D001 /* Products */,
+				3BA2F63E2407D3410031D001 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3BA2F6052407CDB60031D001 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3BA2F6042407CDB60031D001 /* KTMultiRangeCircularSliderExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3BA2F6062407CDB60031D001 /* KTMultiRangeCircularSliderExample */ = {
+			isa = PBXGroup;
+			children = (
+				3BA2F6072407CDB60031D001 /* AppDelegate.swift */,
+				3BA2F60B2407CDB60031D001 /* ViewController.swift */,
+				3BA2F60D2407CDB60031D001 /* Main.storyboard */,
+				3BA2F6102407CDB80031D001 /* Assets.xcassets */,
+				3BA2F6122407CDB80031D001 /* LaunchScreen.storyboard */,
+				3BA2F6152407CDB80031D001 /* Info.plist */,
+			);
+			path = KTMultiRangeCircularSliderExample;
+			sourceTree = "<group>";
+		};
+		3BA2F63E2407D3410031D001 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BA2F63F2407D3410031D001 /* KTMultiRangeCircularSliderFramework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3BA2F6032407CDB60031D001 /* KTMultiRangeCircularSliderExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BA2F6182407CDB80031D001 /* Build configuration list for PBXNativeTarget "KTMultiRangeCircularSliderExample" */;
+			buildPhases = (
+				3BA2F6002407CDB60031D001 /* Sources */,
+				3BA2F6012407CDB60031D001 /* Frameworks */,
+				3BA2F6022407CDB60031D001 /* Resources */,
+				3BA2F6422407D3410031D001 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KTMultiRangeCircularSliderExample;
+			productName = KTMultiRangeCircularSliderExample;
+			productReference = 3BA2F6042407CDB60031D001 /* KTMultiRangeCircularSliderExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3BA2F5FC2407CDB60031D001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = KTPatel;
+				TargetAttributes = {
+					3BA2F6032407CDB60031D001 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 3BA2F5FF2407CDB60031D001 /* Build configuration list for PBXProject "KTMultiRangeCircularSliderExample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3BA2F5FB2407CDB60031D001;
+			productRefGroup = 3BA2F6052407CDB60031D001 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3BA2F6032407CDB60031D001 /* KTMultiRangeCircularSliderExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3BA2F6022407CDB60031D001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BA2F6142407CDB80031D001 /* LaunchScreen.storyboard in Resources */,
+				3BA2F6112407CDB80031D001 /* Assets.xcassets in Resources */,
+				3BA2F60F2407CDB60031D001 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3BA2F6002407CDB60031D001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BA2F60C2407CDB60031D001 /* ViewController.swift in Sources */,
+				3BA2F6082407CDB60031D001 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3BA2F60D2407CDB60031D001 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BA2F60E2407CDB60031D001 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3BA2F6122407CDB80031D001 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BA2F6132407CDB80031D001 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3BA2F6162407CDB80031D001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3BA2F6172407CDB80031D001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3BA2F6192407CDB80031D001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J42XN9RRS2;
+				INFOPLIST_FILE = KTMultiRangeCircularSliderExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ktp.KTMultiRangeCircularSliderExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3BA2F61A2407CDB80031D001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J42XN9RRS2;
+				INFOPLIST_FILE = KTMultiRangeCircularSliderExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ktp.KTMultiRangeCircularSliderExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3BA2F5FF2407CDB60031D001 /* Build configuration list for PBXProject "KTMultiRangeCircularSliderExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BA2F6162407CDB80031D001 /* Debug */,
+				3BA2F6172407CDB80031D001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BA2F6182407CDB80031D001 /* Build configuration list for PBXNativeTarget "KTMultiRangeCircularSliderExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BA2F6192407CDB80031D001 /* Debug */,
+				3BA2F61A2407CDB80031D001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3BA2F5FC2407CDB60031D001 /* Project object */;
+}

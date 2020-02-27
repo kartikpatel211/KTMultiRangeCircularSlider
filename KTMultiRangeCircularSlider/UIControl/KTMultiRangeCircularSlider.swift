@@ -88,7 +88,7 @@ protocol KTRangeCircularHandleDelegate {
     func setUpperCurrentValue();
 }
 
-class KTRangeCircularHandle : NSObject {
+public class KTRangeCircularHandle : NSObject {
     
     
     let firstCircularSliderHandle = CircularSliderHandle()
@@ -113,7 +113,7 @@ class KTRangeCircularHandle : NSObject {
     var maximumAngle: CGFloat = 360.0
     
     // Current value between North/midnight (start) and North/midnight (end) - clockwise direction
-    var currentValue: Float {
+    public var currentValue: Float {
         set {
             delegate?.setCurrentValue(handle: self, currentValue: newValue)
             
@@ -123,7 +123,7 @@ class KTRangeCircularHandle : NSObject {
     }
     
     // the current value of the upper handle of the slider
-    var upperCurrentValue: Float {
+    public var upperCurrentValue: Float {
         set {
             assert(newValue <= maximumValue && newValue >= minimumValue, "current value \(newValue) must be between minimumValue \(minimumValue) and maximumValue \(maximumValue)")
             // Update the upperAngleFromNorth to match this newly set value
@@ -148,21 +148,21 @@ class KTRangeCircularHandle : NSObject {
 }
 
 
-protocol KTMultiRangeCircularSliderDelegate {
+public protocol KTMultiRangeCircularSliderDelegate {
     func rangeUpdated(startValue: Float, endValue: Float, handle: KTRangeCircularHandle)
     func percentageAtTouchByUser(percentage: Double)
 }
 
 
-class KTMultiRangeCircularSlider: UIControl, KTRangeCircularHandleDelegate {
+public class KTMultiRangeCircularSlider: UIControl, KTRangeCircularHandleDelegate {
 
-    var delegate : KTMultiRangeCircularSliderDelegate?
+    public var delegate : KTMultiRangeCircularSliderDelegate?
     
     let orangeColorData = UIColor(red: 255.0/255.0, green: 0.0/255.0, blue: 0.0/255.0, alpha: 1.0)
     let yellowColorData = UIColor(red: 255.0/255.0, green: 255.0/255.0, blue: 0.0/255.0, alpha: 1.0)
     
     // MARK: Handle
-    var arrHandle = [KTRangeCircularHandle]()
+    public var arrHandle = [KTRangeCircularHandle]()
     
     var rotationAnimation : CABasicAnimation?
     
@@ -184,7 +184,7 @@ class KTMultiRangeCircularSlider: UIControl, KTRangeCircularHandleDelegate {
     }
     
     // value for end of arc. This allows for incomplete circles to be created
-    var maximumAngle: CGFloat = 360.0 {
+    public var maximumAngle: CGFloat = 360.0 {
         didSet {
             arrHandle.forEach({$0.maximumAngle = maximumAngle})
             if maximumAngle > 360.0 {
@@ -242,7 +242,7 @@ class KTMultiRangeCircularSlider: UIControl, KTRangeCircularHandleDelegate {
      *
      *  NSArray of strings used to render labels at regular intervals within the circle
      */
-    var innerMarkingLabels: [String]? {
+    public var innerMarkingLabels: [String]? {
         didSet {
             setNeedsUpdateConstraints()
             setNeedsDisplay()
@@ -252,7 +252,7 @@ class KTMultiRangeCircularSlider: UIControl, KTRangeCircularHandleDelegate {
     
     // MARK: Visual Customisation
     // property Width of the line to draw for slider
-    var lineWidth: Int = 5 {
+    public var lineWidth: Int = 5 {
         didSet {
             setNeedsUpdateConstraints() // This could affect intrinsic content size
             invalidateIntrinsicContentSize() // Need to update intrinsice content size
@@ -275,7 +275,7 @@ class KTMultiRangeCircularSlider: UIControl, KTRangeCircularHandleDelegate {
     }
     
     // Font of the inner marking labels within the circle
-    var labelFont: UIFont = .systemFont(ofSize: 15.0) {
+    public var labelFont: UIFont = .systemFont(ofSize: 15.0) {
         didSet {
             setNeedsDisplay()
         }
@@ -292,14 +292,14 @@ class KTMultiRangeCircularSlider: UIControl, KTRangeCircularHandleDelegate {
      *  Note: A negative value will move the label closer to the center. A positive value will move the label closer to the circumference
      *  Value with which to displace all labels along radial line from center to slider circumference.
      */
-    var labelDisplacement: CGFloat = 0
+    public var labelDisplacement: CGFloat = 0
     
     // type of LineCap to use for the unfilled arc
     // NOTE: user CGLineCap.Butt for full circles
-    var unfilledArcLineCap: CGLineCap = .butt
+    public var unfilledArcLineCap: CGLineCap = .butt
     
     // type of CGLineCap to use for the arc that is filled in as the handle moves
-    var filledArcLineCap: CGLineCap = .butt
+    public var filledArcLineCap: CGLineCap = .butt
     
     // MARK: Computed Public Properties
     var computedRadius: CGFloat {
@@ -361,7 +361,7 @@ class KTMultiRangeCircularSlider: UIControl, KTRangeCircularHandleDelegate {
     }
     
     // MARK: - Initialization
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = .clear
     }
@@ -372,7 +372,7 @@ class KTMultiRangeCircularSlider: UIControl, KTRangeCircularHandleDelegate {
     }
     
     
-    func addHandle(currentValue: Float, upperCurrentValue: Float) -> KTRangeCircularHandle? {
+    public func addHandle(currentValue: Float, upperCurrentValue: Float) -> KTRangeCircularHandle? {
         
         let handle = KTRangeCircularHandle()
         handle.delegate = self
@@ -388,7 +388,7 @@ class KTMultiRangeCircularSlider: UIControl, KTRangeCircularHandleDelegate {
         return handle
     }
     
-    func removeHandle(handle: KTRangeCircularHandle){
+    public func removeHandle(handle: KTRangeCircularHandle){
         if arrHandle.contains(handle) {
             arrHandle.remove(object: handle)
             handle.firstImgView!.removeFromSuperview()
@@ -411,7 +411,7 @@ class KTMultiRangeCircularSlider: UIControl, KTRangeCircularHandleDelegate {
     //  }
     
     // MARK: - Function Overrides
-    override var intrinsicContentSize : CGSize {
+    override public var intrinsicContentSize : CGSize {
         // Total width is: diameter + (2 * MAX(halfLineWidth, halfHandleWidth))
         let diameter = radius * 2
         let halfLineWidth = ceilf(Float(lineWidth) / 2.0)
@@ -422,7 +422,7 @@ class KTMultiRangeCircularSlider: UIControl, KTRangeCircularHandleDelegate {
         return CGSize(width: widthWithHandle, height: widthWithHandle)
     }
     
-    override func draw(_ rect: CGRect) {
+    override public func draw(_ rect: CGRect) {
         super.draw(rect)
         
         let ctx = UIGraphicsGetCurrentContext()
@@ -470,7 +470,7 @@ class KTMultiRangeCircularSlider: UIControl, KTRangeCircularHandleDelegate {
     }
     
     
-    override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
+    override public func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
         guard event != nil else { return false }
         
         for handle in arrHandle {
@@ -613,7 +613,7 @@ class KTMultiRangeCircularSlider: UIControl, KTRangeCircularHandleDelegate {
     }
     
     // MARK: - UIControl Functions
-    override func continueTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
+    override public func continueTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
         let lastPoint = touch.location(in: self)
         let lastAngle = floor(CircularTrig.angleRelativeToNorthFromPoint(centerPoint, toPoint: lastPoint))
         
@@ -665,7 +665,7 @@ class KTMultiRangeCircularSlider: UIControl, KTRangeCircularHandleDelegate {
         return NSAttributedString(string: string, attributes: convertToOptionalNSAttributedStringKeyDictionary(attributes)).size()
     }
     
-    func getRotationalTransform() -> CGAffineTransform {
+    public func getRotationalTransform() -> CGAffineTransform {
         if maximumAngle == 360 {
             // do not perform a rotation if using a full circle slider
             let transform = CGAffineTransform.identity.rotated(by: CGFloat(0))
@@ -711,7 +711,7 @@ class KTMultiRangeCircularSlider: UIControl, KTRangeCircularHandleDelegate {
     
     
     // MARK: - UIControl Functions
-    override func beginTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
+    override public func beginTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
         let location = touch.location(in: self)
         
         for handle in arrHandle {
@@ -731,7 +731,7 @@ class KTMultiRangeCircularSlider: UIControl, KTRangeCircularHandleDelegate {
     }
     
     
-    override func endTracking(_ touch: UITouch?, with event: UIEvent?) {
+    override public func endTracking(_ touch: UITouch?, with event: UIEvent?) {
         for handle in arrHandle {
             handle.firstCircularSliderHandle.highlighted = false
             handle.secondCircularSliderHandle.highlighted = false

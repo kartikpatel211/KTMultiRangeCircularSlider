@@ -15,7 +15,7 @@ class DoubleHandleCircularSlider: CircularSlider {
   var minimumHandleDistance: CGFloat = 10
   
   // the current value of the upper handle of the slider
-  var upperCurrentValue: Float {
+  public var upperCurrentValue: Float {
     set {
       assert(newValue <= maximumValue && newValue >= minimumValue, "current value \(newValue) must be between minimumValue \(minimumValue) and maximumValue \(maximumValue)")
       // Update the upperAngleFromNorth to match this newly set value
